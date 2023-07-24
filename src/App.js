@@ -10,13 +10,13 @@ function App() {
                 <Button danger outline>Buy Now!</Button>
             </div>
             <div>
-                <Button warming>Hide Ads!</Button>
+                <Button warning>Hide Ads!</Button>
             </div>
             <div>
                 <Button secondary outline>See Deal</Button>
             </div>
             <div>
-                <Button secondary rounded>Hooray!</Button>
+                <Button primary rounded>Hooray!</Button>
             </div>
         </div>
     );
