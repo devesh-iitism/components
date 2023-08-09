@@ -1,26 +1,25 @@
-import Button from "./components/Button";
-import { GoBell, GoDownload, GoDatabase } from 'react-icons/go';
+import Accordion from "./components/Accordion";
 
 function App() {
-    return (
-        <div>
-            <div>
-                <Button className="mb-5" success rounded><GoBell />Click Me!</Button>
-            </div>
-            <div>
-                <Button danger><GoDownload />Buy Now!</Button>
-            </div>
-            <div>
-                <Button warning><GoDatabase />Hide Ads!</Button>
-            </div>
-            <div>
-                <Button secondary>See Deal</Button>
-            </div>
-            <div>
-                <Button primary rounded>Hooray!</Button>
-            </div>
-        </div>
-    );
+    const items = [
+        {
+            id: '123',
+            label: 'Header 1',
+            content: 'a lsnclksndv sdlkvnsdlvsd lskvnslkdvs dsdv lsnclksndv sdlkvnsdlvsd lskvnslkdvs dsdv lsnclksndv sdlkvnsdlvsd lskvnslkdvs dsdv lsnclksndv sdlkvnsdlvsd lskvnslkdvs dsdv'
+        },
+        {
+            id: '1234',
+            label: 'Header 2',
+            content: 'alsnclksndv sdlkvnsdlvsd lskvnslkdvs dsdv lsnclksndv  lsnclksndv sdlkvnsdlvsd lskvnslkdvs dsdv sdlkvnsdlvsd lskvnslkdvs dsdvlsnclksndv sdlkvnsdlvsd lskvnslkdvs dsdv'
+        },
+        {
+            id: '12345',
+            label: 'Header 3',
+            content: 'alsnclksndv sdlkvnsdlvsd lsnclksndv sdlkvnsdlvsd lskvnslkdvs dsdv lsnclksndv sdlkvnsdlvsd lskvnslkdvs dsdv lsnclksndv sdlkvnsdlvsd lskvnslkdvs dsdv lskvnslkdvs dsdv'
+        }
+    ];
+
+    return <Accordion items={items}/>;
 }
 
 export default App;
